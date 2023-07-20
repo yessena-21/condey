@@ -1,23 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
 
 .page {
     margin: auto;
+    width: 100%;
     max-width: 1000px;
 }
 
 .root {
     background: #EEF5FF;
 }
+
 .header {
     display: flex;
     flex-direction: row;
-    width: 890px;
     height: 140px;
     padding: 0 55px;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .logo {
@@ -32,13 +34,13 @@
 }
 
 .logo__text {
-color: #699DDA;
-font-family: Montserrat;
-font-size: 36px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-left: 10px;
+    color: #699DDA;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 10px;
 }
 
 .header__nav {
@@ -52,27 +54,26 @@ margin-left: 10px;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal; 
+    line-height: normal;
     text-decoration: none;
-    border-bottom:#000 solid 0.3px;
+    border-bottom: #000 solid 0.3px;
 }
 
 .header__link_active {
-color: #7DC7FC;
-border-bottom: none;
+    color: #7DC7FC;
+    border-bottom: none;
 
-} 
+}
 
-.header__search {
-    background-image: url("./image/Vector-Search.png");
-    background-size: contain;
-    width: 35px;
-    height: 35px;
+.main {
+    padding: 0 46px;
+    margin-bottom: 56px;
 }
 
 .promo {
-    margin: 33px auto 77px 95px;
-    padding: 0;
+    margin: 0 0 77px;
+    padding: 33px 0 0 49px;
+
 }
 
 .promo__title {
@@ -84,36 +85,36 @@ border-bottom: none;
     font-weight: 900;
     line-height: 110px;
     margin: 0;
+    margin-bottom: 50px;
 
 }
 
 .promo__paragraph {
     color: #000;
-font-family: Montserrat;
-max-width: 759px;
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: 44px;
-margin-top: 50px;
+    font-family: Montserrat;
+    max-width: 759px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    margin: 0;
 }
 
 .description {
-    margin: 37px auto 50px 40px;
+    margin: 0 0 50px;
 }
 
 
 .description__two-columns {
     display: flex;
-flex-direction: row;
+    flex-direction: row;
 }
 
-.description__img {
-background-image: url("./image/Rectangle\ 17.png");
-width: 496px;
-height: 654px;
-background-size: contain;
-background-repeat: no-repeat;
+.description__image {
+    max-width: 496px;
+    height: 654px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .description__container {
@@ -143,48 +144,48 @@ background-repeat: no-repeat;
 
 .description__paragraph {
     color: #000;
-font-family: Montserrat;
-max-width: 398px;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px;
-margin: 0;
+    font-family: Montserrat;
+    max-width: 398px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
 }
+
 .button-buy {
     width: 330px;
     height: 54px;
     background-color: #091F40;
     border-radius: 10px;
     color: #FFF;
-font-family: Montserrat;
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-margin-top: 35px;
+    font-family: "Montserrat", Courier, monospace;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 35px;
 }
 
-.image {
-    background-image: url(./image/condey-2.png);
-    width: 911px;
-height: 476px;
-flex-shrink: 0;
-margin: 0 auto 56px 47px;
+.cabinet__image {
+    height: 476px;
+    flex-shrink: 0;
+    margin: 0;
 }
 
 .footer {
     width: 914px;
     padding: 0 61px 50px 25px;
     margin: 0;
-  }
-  .footer__logo{
-    display:flex;
+}
+
+.footer__logo {
+    display: flex;
     align-items: center;
     column-gap: 13px;
-  }
- 
-  .footer__logo-text {
+}
+
+.footer__logo-text {
     color: #000;
     font-family: Montserrat;
     font-size: 20px;
@@ -192,14 +193,16 @@ margin: 0 auto 56px 47px;
     font-weight: 400;
     line-height: normal;
     align-items: center;
-  }
-  .footer__logo-img {
+}
+
+.footer__logo-img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #699dda;
-  }
-  .footer__phone {
+}
+
+.footer__phone {
     color: #000;
     font-family: Montserrat;
     font-size: 20px;
@@ -207,33 +210,38 @@ margin: 0 auto 56px 47px;
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
-  }
-  .footer__row {
+}
+
+.footer__row {
     display: flex;
     justify-content: space-between;
-    
-  }
-  .footer__info{
+
+}
+
+.footer__info {
     display: flex;
     column-gap: 46px;
     align-items: center;
-  }
-  .footer__nav {
+}
+
+.footer__nav {
     display: flex;
     column-gap: 56px;
     align-items: center;
-  }
-  .footer__container {
+}
+
+.footer__container {
     display: flex;
     flex-direction: column;
-  }
-  .footer__link {
+}
+
+.footer__link {
     color: #000;
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal; 
+    line-height: normal;
     text-decoration: none;
-    border-bottom:#000 solid 0.3px;
+    border-bottom: #000 solid 0.3px;
 }
